@@ -1,0 +1,31 @@
+{
+  "featureOrder": [
+    "rpm",
+    "egt",
+    "cht",
+    "oil_pressure",
+    "oil_temperature",
+    "fuel_flow",
+    "vibration",
+    "throttle_cmd",
+    "altitude_ft",
+    "ambient_temp_c",
+    "residual_rpm",
+    "residual_egt",
+    "residual_cht",
+    "residual_oil_pressure",
+    "residual_vibration",
+    "twin_sync_pct"
+  ],
+  "classLabels": [
+    "INJECTOR_ABNORMALITY",
+    "LUBRICATION_DEGRADATION",
+    "NONE",
+    "OVERHEATING",
+    "SENSOR_DRIFT",
+    "VIBRATION_ANOMALY"
+  ],
+  "modelType": "xgboost-multiclass",
+  "trainedOn": "uav_piston_engine_dataset.csv (323,100 rows, noise-augmented)",
+  "testAccuracyClean": 99.45
+}
